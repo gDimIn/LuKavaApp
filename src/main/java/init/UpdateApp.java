@@ -25,9 +25,11 @@ public class UpdateApp extends TelegramLongPollingBot {
 
             String responseText;
             if (receivedText.equals("/start")) {
-                responseText = "Привіт! Я Telegram-бот на Java 🙂";
+                responseText = "Привіт. Я телеграм-бот, я допоможу тобі. Напиши свій номер чергування";
             } else if (receivedText.equals("/help")) {
                 responseText = "Список команд:\n/start - запуск\n/help - допомога";
+            }else if (receivedText.equals("1")){
+                responseText = "Пост №1 з 17:00 до 19:00";
             } else {
                 responseText = "Ти написав: " + receivedText;
             }

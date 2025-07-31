@@ -11,7 +11,6 @@ public class InitApp {
         try {
             TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
             botsApi.registerBot(new UpdateApp());
-            System.out.println("Chat success");
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
