@@ -1,0 +1,1 @@
+web: java -Dfile.encoding=UTF-8 -jar build/libs/LuKavaApp-1.0-SNAPSHOT-all.jar
