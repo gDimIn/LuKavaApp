@@ -5,11 +5,13 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
+import java.lang.reflect.Array;
+
 public class UpdateApp extends TelegramLongPollingBot {
 
     private final String BOT_TOKEN = System.getenv("BOT_TOKEN");
     private final String POSITION = System.getenv("POSITION");
-    private final String BOT_USERNAME = "testTarasBot";
+    private final String BOT_USERNAME = System.getenv("BOT_USERNAME");
 
     @Override
     public String getBotUsername() {
@@ -28,7 +30,7 @@ public class UpdateApp extends TelegramLongPollingBot {
         if (indx < 1 || indx > 10) {
             return "Дані по цьому номеру відсутні";
         }
-        return String.valueOf(POSITION.split(","));
+        return String.valueOf(Array.get(POSITION.split(","),indx));
     }
 
     @Override
