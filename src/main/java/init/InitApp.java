@@ -5,7 +5,6 @@ import org.telegram.telegrambots.meta.exceptions.*;
 import org.telegram.telegrambots.updatesreceivers.*;
 
 public class InitApp {
-
     public static void main(String[] args) {
 
         try {
