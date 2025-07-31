@@ -7,14 +7,17 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 public class UpdateApp extends TelegramLongPollingBot {
 
+    private final String BOT_TOKEN = System.getenv("BOT_TOKEN");
+    private final String BOT_USERNAME = "testTarasBot";
+
     @Override
     public String getBotUsername() {
-        return "testTarasBot";
+        return BOT_USERNAME;
     }
 
     @Override
     public String getBotToken() {
-        return "2084121730:AAGJLyJu262NI4gEJTYrnqEI8Axb_yT7i74";
+        return BOT_TOKEN;
     }
 
     @Override
