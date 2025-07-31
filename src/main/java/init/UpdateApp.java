@@ -31,7 +31,7 @@ public class UpdateApp extends TelegramLongPollingBot {
             return "Дані по цьому номеру відсутні";
         }
         String withLineBreaks = POSITION.replace("+\n+", "\n");
-        return String.valueOf(Array.get(POSITION.split(","),indx));
+        return String.valueOf(Array.get(withLineBreaks.split(","),indx));
     }
 
     @Override
