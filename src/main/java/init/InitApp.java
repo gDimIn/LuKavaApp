@@ -1,8 +1,8 @@
 package init;
 
-import org.telegram.telegrambots.meta.TelegramBotsApi;
-import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
+import org.telegram.telegrambots.meta.*;
+import org.telegram.telegrambots.meta.exceptions.*;
+import org.telegram.telegrambots.updatesreceivers.*;
 
 public class InitApp {
 

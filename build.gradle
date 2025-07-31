@@ -1,5 +1,12 @@
 plugins {
-    id 'java'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+    id 'application'
+}
+
+sourceCompatibility = '17'
+
+application{
+    mainClass = 'init.InitApp'
 }
 
 group = 'org.example'
