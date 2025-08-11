@@ -49,6 +49,6 @@ public class Schedule implements  BotCommand{
 
     @Override
     public void execute(Long chatId) {
-        sender.sendTextMessageWithKeyboard(chatId,"", getNumKeyboard());
+        sender.sendTextMessageWithKeyboard(chatId,"schedule set", getNumKeyboard());
     }
 }
