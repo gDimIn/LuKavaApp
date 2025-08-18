@@ -23,8 +23,8 @@ public class StartCommand implements iBotCommand {
     }
 
     public void execute(Long chatId) {
-        sender.sendTextMessage(chatId, "Привіт. Я телеграм-бот, я допоможу тобі. Обери в меню \"Графік по номеру\"");
         sender.sendStartMenu(initMenu());
+        sender.sendTextMessage(chatId, "Привіт. Я телеграм-бот, я допоможу тобі. Обери в меню \"Графік по номеру\"");
     }
 
 }
