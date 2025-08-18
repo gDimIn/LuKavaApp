@@ -1,8 +1,13 @@
 package init;
 
+import org.telegram.telegrambots.meta.api.methods.commands.SetMyCommands;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.objects.commands.BotCommand;
+import org.telegram.telegrambots.meta.api.objects.commands.scope.BotCommandScopeDefault;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboard;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
+
+import java.util.List;
 
 public class BotMessageSender {
     private final LuKavaBot bot;
@@ -34,6 +39,14 @@ public class BotMessageSender {
 
         try {
             bot.execute(message);
+        } catch (TelegramApiException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void sendStartMenu(SetMyCommands commands){
+        try {
+            bot.execute(commands);
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }

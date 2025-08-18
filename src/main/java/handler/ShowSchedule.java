@@ -4,7 +4,7 @@ import init.BotMessageSender;
 
 import java.lang.reflect.Array;
 
-public class ShowSchedule implements BotCommand{
+public class ShowSchedule implements iBotCommand {
     public final BotMessageSender sender;
     private String recivedText;
     private final String POSITION = System.getenv("POSITION").replace("\\n","\n");

@@ -1,14 +1,13 @@
 package handler;
 
 import init.BotMessageSender;
-import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboard;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Schedule implements  BotCommand{
+public class Schedule implements iBotCommand {
 
     private final BotMessageSender sender;
 

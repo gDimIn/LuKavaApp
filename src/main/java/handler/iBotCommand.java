@@ -1,5 +1,5 @@
 package handler;
 
-public interface BotCommand {
+public interface iBotCommand {
     void execute(Long chatId);
 }

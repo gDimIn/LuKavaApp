@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CommandHandler {
-    private final Map<String, BotCommand> commandMap = new HashMap<>();
+    private final Map<String, iBotCommand> commandMap = new HashMap<>();
     private final BotMessageSender sender;
 
     public  CommandHandler(BotMessageSender sender){
@@ -30,7 +30,7 @@ public class CommandHandler {
     }
 
     public void handleCommand(Long chatId, String command){
-        BotCommand botCommand = commandMap.get(command);
+        iBotCommand botCommand = commandMap.get(command);
 
         if (botCommand != null) {
             botCommand.execute(chatId);
