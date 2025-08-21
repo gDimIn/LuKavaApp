@@ -1,5 +1,6 @@
-package handler;
+package commands;
 
+import handler.iBotCommand;
 import init.BotMessageSender;
 import org.telegram.telegrambots.meta.api.objects.commands.BotCommand;
 import org.telegram.telegrambots.meta.api.methods.commands.SetMyCommands;

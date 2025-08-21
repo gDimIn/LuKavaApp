@@ -1,5 +1,6 @@
-package handler;
+package commands;
 
+import handler.iBotCommand;
 import init.BotMessageSender;
 
 import java.lang.reflect.Array;
