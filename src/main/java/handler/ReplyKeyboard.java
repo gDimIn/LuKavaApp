@@ -32,6 +32,6 @@ public class ReplyKeyboard implements iBotCommand {
 
     @Override
     public void execute(Long chatId) {
-        sender.sendTextMessageWithKeyboard(chatId,"schedule set", getNumKeyboard());
+        sender.sendTextMessageWithKeyboard(chatId,"Add keyboard", getNumKeyboard());
     }
 }

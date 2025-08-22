@@ -18,10 +18,11 @@ public class CommandHandler {
 
     private void registerCommands(){
         commandMap.put("/start", new StartCommand(sender));
+
         commandMap.put("/schedule", new ReplyKeyboard(sender));
+
         for (EnumSchedule type : EnumSchedule.values()){
             commandMap.put(type.getCommadKey(), new ShowSchedule(sender, type.getCommadKey()));
-
         }
 //        commandMap.put("1", new ShowSchedule(sender,"1"));
 //        commandMap.put("2", new ShowSchedule(sender,"2"));
